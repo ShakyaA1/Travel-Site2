@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	
+
+	<title>Dubai Travel</title>
+</head>
+<body>
+	<header class="header">
+		<video autoplay="" muted="" loop="" id="myVideo" class="bg_video">
+				<source class="bg_video_content" src="Dubaivid2.mp4" type="video/mp4">
+		</video>
+		<div class="heading_text">
+			<div class="heading_primary">Explore Dubai</div>
+			<div class="heading_sub">Broaden your horizons</div>
+		</div>
+
+		<div class="nav_bar">
+			<img src="Dubai_Logo_final.png." alt="logo" class="logo">
+
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Contact Us</a></li>
+
+				</ul>
+
+			</nav>
+		</div>
+	
+	</header>
+	<main>
+		<section class="section-1">
+			<div class="row">
+			<div class="col-1-of-2">
+				Golden Retrivers are even tempered, intelligent and very affectionate dogs. They're very playful and often get along with children and strangers very well. Not only are they very playful, but they're also very eager to please which is why they respond well to service training and make excellent service dogs, search and rescue dogs and contraband detection dogs.Golden Retrivers also like to be very active! So they would love a game of fetch, a swim or just running around the park! As long as exercise is provided everyday, they can adapt to any envrionemnt including apartments. While their golden coat is beautiful, they are average shedders so they're coat needs to be brushed once weekly
+				
+			</div>
+			
+				<button class="btn">EXPLORE</button>
+
+			
+				<div class="image_box">
+					<img src="Dubai_pic2.jpeg" alt="pic1" class="allpics pic2">
+					<img src="Dubai_pic_1.jpg" alt="pic1" class="allpics pic1">
+					<img src="Dubai_pic_4.jpg" alt="pic2" class="allpics pic4">
+					<img src="Dubai_pic_3.jpg" alt="pic2" class="allpics pic3">
+				</div>	 
+			
+			
+
+			
+		</div>
+	
+		</section>
+	</main>
+		<section class="section_2">
+			<div class="card">
+				<div class="card-side card-side-front">
+					Front
+				</div>
+				<div class="card-side card-side-back">
+					Back
+				</div>
+			</div>
+
+
+
+
+	</section>
+
+</body>
+</html>
+
+
+CSS
+
+.section_3{
+	position: absolute;
+	top: 68rem;
+	left: 40rem;
+}
+
+.card_2 {
+	perspective: 150rem;
+	-moz-perspective:150rem;
+	position: relative;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+.card-side_2 {
+	height: 400px;
+	width: 400px;
+	font-size: 15px;
+	color: white;
+	backface-visibility: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+
+.desertall {
+	height: 400px;
+	width: 450px;
+}
+.card-side-front-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 1s;
+	background-color: blue;
+	
+}
+
+.card-side-back-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s;
+	background-color: #f2e6ff;
+}
+
+.card:hover .card-side-front-2 {
+	transform: rotateY(-180deg);
+}
+.card:hover .card-side-back-2{
+	transform: rotateY(0deg);
+}
+
+
+---------------------------------------------------------------------------
+FULL CSS
+}
+
+.image_box {
+	position: relative;
+	border-color: solid white;
+	height:5rem;
+	background-color: white;
+	display:flex;
+	flex-direction: row;
+
+}
+
+.pic1 {
+/*	top: 10%;
+	left: 20%;*/
+	/*width:10rem;*/
+	height: 10rem;
+	width: 10rem;
+	/*z-index: 3;*/
+	transition: .2s;
+	/*left: 2rem;*/
+}
+
+.pic2 {
+	/*top: -21rem;
+	left: 2rem;*/
+	/*width: 8rem;*/
+	height: 10rem;
+	width: 10rem;
+	/*z-index: 2;*/
+	transition: .2s;
+/*left: 60%;
+	transform: scale(1.5) translateY(-.5rem);*/
+}
+.pic3{
+	/*top: -27rem;
+	left: 5rem;*/
+	height: 10rem;
+	width: 10rem;
+	/*z-index: 1;*/
+	transition: .2s;
+}
+
+.pic4 {
+	/*top: -21rem;
+	left: 6rem;*/
+	height: 10rem;
+	width: 10rem;
+	/*z-index: 3;*/
+	transition: .2s;
+	/*left: 8rem;
+	top:-5rem;*/
+}
+
+
+.allpics {
+	border: 4px solid white;
+	outline-offset: 2rem;
+	position: absolute;
+}
+
+.allpics:hover {
+	transform: scale(1.5);
+	z-index: 10;
+	box-shadow: 0 2.5rem 4rem rgba(0,0,0,.6)
+}
+
+.allpics:hover .allpics:not(:hover){
+	transform: scale(0.8);
+	opacity: 0.8;
+}
+
+.btn {
+	background-color: background: #4ECDC4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	width: 8rem;
+	height:4rem;
+	border-radius: 0.5rem;
+	border: 0.2rem  ;
+	background-color: #ffffff;
+	transition: background-color 2s;
+	font-family: 'Acme', sans-serif;;
+	position: absolute;
+	font-size: 1.5rem;
+	left: 18rem;
+
+}
+
+.btn:hover {
+	background: #757F9A;   fallback for old browsers 
+background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.row {
+	background-image:url(https://thumbs.gfycat.com/BountifulRevolvingIndianrockpython-small.gif);
+	padding: 5rem;
+	/*width: 100%;*/
+	/*margin-left: -5rem;*/
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+	
+	
+	
+}
+/*#A7D5FB
+.row {#B8E4F9#90CAFA
+	background-color: #757F9A;
+	width: 100rem;
+	height:20rem;
+	padding: 5rem;
+	padding-left:4rem;
+	
+}background-image: #A7D5FB;
+
+*/
+.row_2 {
+	display: flex;
+}	
+.card {
+	position: relative;
+	display: flex;
+	left: 30rem;
+	
+}
+
+.card-side {
+	height: 300px;
+	width: 350px;
+	font-size: 15px;
+	color: white;
+	backface-visibility: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+
+.card-side-front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 1s;
+}
+
+.resturauntall {
+	height: 300px;
+	width: 350px;
+}
+
+.card-side-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s;
+	background-color: #f2e6ff;
+}
+
+.card:hover .card-side-front {
+	transform: rotateY(-180deg);
+}
+.card:hover .card-side-back{
+	transform: rotateY(0deg);
+}
+
+.desertall {
+	width:350px;
+	height: 300px;
+}
+
+.card_2 {
+	/*perspective: 150rem;
+	-moz-perspective:150rem;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;*/
+	position: relative;
+	display: flex;
+	left:5rem;
+	
+}
+.card-side_2 {
+	height: 300px;
+	width: 350px;
+	font-size: 15px;
+	color: white;
+	backface-visibility: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+
+.card-side-front-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 1s;
+}
+
+.card-side-back-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s;
+	background-color: red;
+}
+.card_2:hover .card-side-front-2 {
+	transform: rotateY(-180deg);
+}
+.card_2:hover .card-side-back-2{
+	transform: rotateY(0deg);
+}
+
+-----
+.card_3 {
+	/*perspective: 150rem;
+	-moz-perspective:150rem;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;*/
+	position: relative;
+	display:flex;
+	left:20rem;
+
+	
+}
+.card-side_3 {
+	height: 300px;
+	width: 350px;
+	font-size: 15px;
+	color: white;
+	backface-visibility: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+
+}
+
+.card-side-front-3 {
+	position: absolute;
+	top: 0;
+	left: 0rem;
+	z-index: 1;
+	transition: all 1s;
+}
+
+.card-side-back-3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s;
+	background-color: red;
+}
+.card_3:hover .card-side-front-3 {
+	transform: rotateY(-180deg);
+}
+.card_3:hover .card-side-back-3{
+	transform: rotateY(0deg);
+}
+
+.cityall {
+	width:350px;
+	height: 300px;
+}

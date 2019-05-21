@@ -1,0 +1,589 @@
+:root{
+	--font-family: 'Montserrat', sans-serif;
+	--color-lightgray:#E0E0E0;
+	--color-white:#ffffff;
+}
+
+
+html{
+	font-size: 62.5%;
+	}
+	body {
+	margin: 0;
+	/*background: white;*/
+background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.header {
+	position: relative;
+    height: 70vh;
+    overflow: hidden;
+	background-size: cover;
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+	clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg_video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1; 
+	opacity:50%;
+}
+
+@media screen and (max-width: 1024px) {
+	#myVideo {
+		width":100%;
+
+	}
+}
+
+.heading_text {
+/*	position:relative;*/
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold; 
+	/*align-items: center;*/
+
+}
+
+@media only screen and (max-width: 1024px){
+	.heading_text {
+		text-align:center;
+		margin: 0 auto;
+		position: absolute;
+		top:20%;
+		
+	}
+}
+
+.heading_primary {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5rem;
+	letter-spacing: 3.5rem;
+	text-align: center;
+	margin: 0 auto; 
+	;
+}
+
+.heading_primary:hover {
+	transform:scale(1.5);
+	 text-shadow: 2px 2px #DC143C;
+}
+@media only screen and (max-width: 1024px) {
+	.heading_primary{
+		align-items: center;
+		transform: translateX(10%);
+
+	}
+}
+
+.heading_sub {
+	font-size: 1.5rem;
+	letter-spacing: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 2rem;
+	text-align: center;
+	margin: 0 auto; 
+	
+}
+
+.heading_sub:hover {
+	transform:scale(1.5);
+	 text-shadow: 2px 2px #ff0000;
+}
+
+.logo {
+	float: left;
+	padding-top: 10px;
+	padding-left: 2px;
+	height: 20rem;
+	width: 25rem;
+}
+
+@media only screen and (max-width: 1024px){
+	.logo{
+		transform: scale(0.5);
+
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.nav_bar{
+		top:50%;
+	}
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	list-style: none;
+	padding-right: 1rem;
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 10rem;
+	padding-top: 2rem;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+}
+
+nav a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 2rem;
+	
+}
+
+
+label {
+	margin: 0  4rem 0;
+	font-size:2rem;
+	line-height:4rem;
+	display:none;
+}
+
+
+nav a:hover {
+	color: #c3c1c9;
+
+}
+
+
+
+.section_1 {
+	padding-top:3rem;
+	width: 95%;
+	/*overflow: hidden;*/
+	padding-left:5rem;
+}
+
+@media only screen and (max-width: 1024px){
+
+	.section_1{
+		position: absolute;
+		top:40%;
+		width:90%;
+		padding: none;
+		left:-10%;
+		/*padding-left: 20px;
+		padding-right: 20px;*/
+
+	}
+}
+.row {
+	/*background-image:url(http://www.travelweekly-china.com/uploadedImages/News/%E8%88%AA%E7%A9%BA_Aviation/45928.jpg?width=1540&height=866&scale=both&mode=crop);*/
+	
+	background-color:#E0E0E0;
+	padding: 5rem;
+	/*width: 100%;*/
+	/*margin-left: -5rem;*/
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+	
+	
+}
+
+
+.col-1-of-2 {
+	padding:0.5rem;
+	width:30%;
+	font-family: 'Neucha', cursive;
+	font-size: 2.2rem;
+	border-radius: 3rem;
+	/*background-color: white;*/
+}
+
+@media only screen and (max-width: 1024px){
+	.col-1-of-2{
+		width:35%;
+		font-size: 15px;
+		padding:none;
+
+	}
+}
+
+
+.image_box {
+	position: relative;
+	border-color: solid white;
+	height:5rem;
+	display:flex;
+	flex-direction: row;
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.image_box{
+		transform: scale(0.7);
+		left:-15%;
+		
+
+	}
+}
+.pic1 {
+/*	top: 500px;
+	left: 300px;*/
+	/*width:10rem;*/
+	height: 20rem;
+	width: 20rem;
+	z-index: 3;
+	transition: .2s;
+	top: -65%;
+	left: -8%;
+
+}
+@media only screen and (max-width: 1024px) {
+	.pic1{
+		left:-10%;
+		top:50%;
+	}
+}
+.pic2 {
+	height: 20rem;
+	width: 20rem;
+	transition: .2s;
+	top: -290%;
+	left: 15%;
+	/*transform: scale(1.5) translateY(-.5rem);*/
+}
+
+@media only screen and (max-width: 1024px) {
+	.pic2{
+		left:-10%;
+
+	}
+}
+
+.pic3{
+	height: 20rem;
+	width: 20rem;
+	transition: .2s;
+	top: 0%;
+	left: 25%;
+	z-index: 3;
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.pic3{
+		left:56%;
+		top:50%;
+	}
+}
+
+.pic4 {
+	/*top: -21rem;
+	left: 6rem;*/
+	height: 20rem;
+	width: 20rem;
+	/*z-index: 3;*/
+	transition: .2s;
+	top: -65%;
+	left: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+	.pic4 {
+		left:56%;
+		top:-290%;
+	}
+}
+
+.allpics {
+	border: 4px solid white;
+	outline-offset: 2rem;
+	position: absolute;
+}
+
+.allpics:hover {
+	transform: scale(1.5);
+	z-index: 10;
+	box-shadow: 0 2.5rem 4rem rgba(0,0,0,.6)
+}
+
+.allpics:hover .allpics:not(:hover){
+	transform: scale(0.8);
+	opacity: 0.8;
+}
+
+/*@media screen and (max-width: 680px) {
+	aside {
+		width:36%;
+	}
+}*/
+
+
+.section_2 {
+	padding-top:5rem;
+	width: 95%;
+	/*overflow: hidden;*/
+	padding-left:5rem;
+
+}
+
+@media only screen and (max-width: 1024px){
+	.section_2{
+		position: relative;
+		top:75%;
+	}
+}
+
+.row_2 {
+	background-color:#B0BEC5;
+	/*background-image: url(https://steamuserimages-a.akamaihd.net/ugc/172663821536493098/7BD0320DF4E62A7F536A7BA36256AC4EC5E45096/);*/
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 85%, 68% 100%, 32% 100%, 0 86%, 0% 43%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 85%, 68% 100%, 32% 100%, 0 86%, 0% 43%, 0 0);
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+  	justify-content: space-around;
+  	align-items: center;
+  	padding:8rem;
+}
+
+/*@media only screen and (max-width: 1024px){
+	.row_2{
+		display: flex;
+		flex-direction: column;
+	}
+}*/
+.card {
+	top:-2rem;
+	position: relative;	
+	height: 50rem;
+	width: 30rem;
+	text-align: center;
+	font-family:  'Fugaz One', cursive;
+}
+
+.card-side {
+	height: 50rem;
+	width: 30rem;
+	font-size: 2rem;
+	color: black;
+	backface-visibility: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+	
+}
+
+.card-side-front {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 1s;
+	
+}
+
+.text h1 {
+	top:15rem;
+}
+.card-side-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s;
+	background-color: white;
+	text-decoration-color: black;
+	
+}
+
+.card:hover .card-side-front {
+	transform: rotateY(-180deg);
+}
+.card:hover .card-side-back{
+	transform: rotateY(0deg);
+}
+
+.card-img {
+	width:100%;
+	height:100%;
+}
+.Content_Block_4 {
+	padding-top:5rem;
+	width: 95%;
+	/*overflow: hidden;*/
+	padding-left:5rem;
+	padding-bottom: 4rem;
+}
+.section_3 {
+	display:flex;
+	align-items: center;
+	color:#fff;
+	position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+
+.row_3 {
+	width:100%
+	height:100vh;
+	overflow:hidden;
+}
+
+.container {
+	padding-left:1rem;
+	padding-right:1rem;
+	margin: auto;
+	text-align:center;
+
+}
+
+.row_overlay {
+	height:100vh;
+	width:100vw;
+	position:absolute;
+	top:0;
+	left: 0;
+	background:#78909C;
+	z-index:1;
+	opacity:0.65;
+	text-align: center;
+
+}
+
+.row_content {
+	z-index:2;
+	text-align: center;
+}
+
+.row_content h1{
+	font-size:5rem;
+	margin-bottom:0;
+	font-family: 'Marck Script', cursive;
+	
+}
+
+.row_content h1:hover {
+	transform: scale(1.5);
+}
+.row_content p{
+	font-size:1.5rem;
+	display:block;
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom:2rem;
+	text-align: center;
+	
+}
+
+.btn {
+	text-decoration: none;
+	background: #37474F;
+	color: white;
+	padding: 1rem 2rem;
+	font-size:2rem;
+	border-radius: 0.5rem;
+	position: relative;
+	font-family: 'Fugaz One', cursive;*/
+	transition: all 500ms ease; 
+
+}
+
+.btn:before {
+	content:'';
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	width: 0rem;
+	height: 5rem;
+	background: rgba(192,247,251,0.3);
+	border-radius: 0.5rem;
+	transition: all 0.5s ease;
+	width: 100%;
+} 
+
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(200, 200, 200, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window>div {
+  width: 40rem;
+  position: relative;
+  margin: 10% auto;
+  padding: 2rem;
+  background: #fff;
+  color: #444;
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 1rem;
+  font-size: 2rem;
+  padding-top:0.5rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 2rem;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.modal-window h1 {
+  font-size: 5rem;
+  margin: 0 0 2rem;
+
+}
+.modal-window h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+
+}
+
+---------------------------
+<input type="checkbox" class="nav_checkbox" id="nav-toggle">
+			<label for="nav-toggle" class="nav_button">
+				<span class="nav_icon"></span>
+			</label>
+
+			<div class="nav_background">&nbnsp;</div>
+			<div class="navigation_nav">
+				<ul class="nav_list">
+					<li class="nav_item"><a href="#" class="nav_link">About</a></li>
+					<li class="nav_item"><a href="#" class="nav_link">Explore</a></li>
+					<li class="nav_item"><a href="#" class="nav_link">Contact Us</a></li>
+					<li class="nav_item"><a href="#" class="nav_link">Plan</a></li>

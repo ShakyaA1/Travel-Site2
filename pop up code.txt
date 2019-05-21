@@ -1,0 +1,204 @@
+.row_4 {
+	background-color:#E1BEE7;
+	padding: 5rem;
+	/*width: 100%;*/
+	/*margin-left: -5rem;*/
+/*	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;*/
+}
+.col-1-of-3 {
+	padding:1rem;
+
+	width:35%;
+	font-family: 'Neucha', cursive;
+	font-size: 2.2rem;
+	border-radius: 3rem;
+	background-color: white;
+	display:flex;
+	flex-direction: row;
+}
+
+.Culture_image_box {
+	position: relative;
+	border-color: solid white;
+	
+	width:50%;
+	background-color: white;
+	align-items: left;
+	top:-37rem;
+	left:60rem;
+	/*display:flex;
+	flex-direction: row;*/
+
+}
+
+.Culture1 {
+	height:30rem;
+	width:30rem;
+	top:10%;
+	left:60%;
+}
+
+.Culture2 {
+	height:30rem;
+	width:30rem;
+}
+
+.Culture3 {
+	height:30rem;
+	width:30rem;
+}
+
+.Culture4 {
+	height:30rem;
+	width:30rem;
+}
+
+.section_4 {
+	padding-top:3rem;
+	width: 95%;
+	/*overflow: hidden;*/
+	padding-left:4rem;
+}
+
+#modalWindow:target{
+	opacity:1;
+	visibility: visible;
+}
+
+.popup:target .section_4{
+	opacity:1;
+	transform: scale(1) translate(-50%);
+}
+
+#container {
+	margin:0 auto;
+	width:80%;
+	font-family: sans-serif;
+	font-size:16px;
+}
+#modalWindow {
+	position:fixed;
+	font-family: sans-serif;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	background: white;
+	z-index:0.9;
+	opacity: 0;
+
+}
+
+------------------------------
+<!-- <section class="section_4" >
+		<div id="container">
+		<div class="row_4">
+	<div class="Heritage and Culture"></div>
+	<div class="col-1-of-3">
+				Golden Retrivers are even tempered, intelligent and very affectionate dogs. They're very playful and often get along with children and strangers very well. Not only are they very playful, but they're also very eager to please which is why they respond well to service training and make excellent service dogs, search and rescue dogs and contraband detection dogs.Golden Retrivers also like to be very active! So they would love a game of fetch, a swim or just running around the park! As long as exercise is provided everyday, they can adapt to any envrionemnt including apartments. While their golden coat is beautiful, they are average shedders so they're coat needs to be brushed once weekly
+			</div>
+			
+			<div class="Culture_image_box">
+					<img src="Dubai_Culture_1.jpg" alt="Culture1" class="Culturepics Culture1">
+					<img src="Dubai_Culture_2.jpg" alt="Culture2" class="Culturepics Culture2">
+					<img src="Dubai_Culture_3.jpg" alt="Culture3" class="Culturepics Culture3"> 
+					<img src="Dubai_Culture_4.jpg" alt="Culture4" class="Culturepics Culture4">
+				</div>
+			</div>
+		</div>
+		<div id="modalWindow">
+			<div>
+				<a href="#close">Close modal</a><br>
+		
+
+</section> -->
+=============
+<div class="bg-modal">
+	<div class="modal-content">
+		<div class="close"></div>
+		<img src="Dubai_Logo_Copy.png." alt="logo" class="logo_2">
+		<form action="">
+			<input type="text" placeholder="Name">
+			<input type="text" placeholder="E-mail">
+			<a href="" class="btn"> Submit</a>
+		</form>
+</div>
+</div>
+=============
+/*.bg-modal {
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.7);
+	opacity:0.7;
+	position:absolute;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	display:none;
+
+}
+
+.modal-content {
+	width:500px;
+	height:300px;
+	background-color: white;
+	border-radius:4px;
+	text-align:center;
+	padding:30px;
+	position: relative;
+
+}
+.logo_2 {
+	width:25rem;
+	height:20rem;
+}
+.input {
+	width:50%;
+	display:block;
+	margin: 15px auto;
+
+}
+
+.close {
+	position:absolute;
+	top: 0;
+	right:14px;
+	font-size:42px;
+	transform: rotate(45deg);
+	cursor:pointer;
+}*/
+
+./*modalDialog {
+	position: fixed;
+	font-family: Arial;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:rgba(0,0,0,0.8);
+	z-index:99999;
+	-webkit-transition:opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events:none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width:400px;
+	position:relative;
+	margin:10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius:10px;
+	background:white;*/
+}

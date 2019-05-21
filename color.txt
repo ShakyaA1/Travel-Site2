@@ -1,0 +1,102 @@
+background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);   Chrome 10-25, Safari 5.1-6 
+background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+
+potential colors:
+background: #4ECDC4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: #2980b9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+row 2:
+background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3CD3AD, #4CB8C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+.card-side_2 {
+	height: 500px;
+	width: 300px;
+	font-size: 15px;
+	color: white;
+	backface-visibility: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+
+.card-side-front-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 1s;
+	background-color:white;
+}
+
+/*.desertall {
+	width:500px;
+	height: 300px;
+}
+*/
+.card-side-back-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s;
+	background-color: red;
+}
+.card_2:hover .card-side-front-2 {
+	transform: rotateY(-180deg);
+}
+.card_2:hover .card-side-back-2{
+	transform: rotateY(0deg);
+}
+
+.card_3 {
+	/*perspective: 150rem;
+	-moz-perspective:150rem;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;*/
+	position: relative;
+	/*eft:55rem;*/
+}
+.card-side_3 {
+	height: 500px;
+	width: 300px;
+	font-size: 15px;
+	color: white;
+	backface-visibility: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+
+}
+
+.card-side-front-3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 1s;
+	background-color: red;
+}
+
+.card-side-back-3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s;
+	background-color: red;
+}
+.card_3:hover .card-side-front-3 {
+	transform: rotateY(-180deg);
+}
+.card_3:hover .card-side-back-3{
+	transform: rotateY(0deg);
+}
